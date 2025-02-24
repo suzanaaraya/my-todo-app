@@ -1,0 +1,48 @@
+/* AddTodo.module.css */
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px;
+    border: 5px solid #010b0d;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #ff00d4;
+  }
+  
+  .dateInput {
+    padding: 10px;
+    border: 5px solid #010b0d;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.6s ease;
+  }
+  
+  .dateInput:focus {
+    border-color: #ff00d4;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #06181b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff00d4;
+  }
