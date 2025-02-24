@@ -45,7 +45,7 @@ Follow these steps to set up the project locally.
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/suzanaaraya/to-do-app.git
+   git clone https://github.com/suzanaaraya/my-todo-app.git
    cd to-do-app
 
 2. **Set up the back-end**:  
