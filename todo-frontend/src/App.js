@@ -6,7 +6,7 @@ import styles from "./App.module.css";
 
 function App() {
   const [todos, setTodos] = useState([]);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  
 
   useEffect(() => {
     fetchTodos();
@@ -72,10 +72,8 @@ const addTodo = async (text, dueDate) => {
 
 
   return (
-    <div className={`${styles.App} ${isDarkMode ? styles.darkMode : ""}`}>
-      <button onClick={() => setIsDarkMode(!isDarkMode)}>
-      {isDarkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+    <div className={styles.App}>
+      
       <h1>Plan your Day!</h1>
       <AddTodo addTodo={addTodo} />
       <TodoList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo} />

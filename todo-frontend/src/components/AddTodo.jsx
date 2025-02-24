@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./AddTodo.module.css";
 
+// AddTodo component
 function AddTodo({ addTodo }) {
   const [text, setText] = useState("");
   const [dueDate, setDueDate] = useState("");

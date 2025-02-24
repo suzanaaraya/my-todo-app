@@ -2,6 +2,7 @@ import React from 'react';
 import TodoItem from './TodoItem';
 import styles from './TodoList.module.css';
 
+// TodoList component
 function TodoList({ todos, toggleComplete, deleteTodo, editTodo }) {
   return (
     <ul className={styles.list}>
@@ -9,9 +10,9 @@ function TodoList({ todos, toggleComplete, deleteTodo, editTodo }) {
         <TodoItem
           key={todo.id}
           todo={todo}
-          toggleComplete={toggleComplete}
-          deleteTodo={deleteTodo}
-          editTodo={editTodo} // Pass the editTodo function
+          toggleComplete={toggleComplete} // pass the toggleComplete function
+          deleteTodo={deleteTodo} // pass the deleteTodo function
+          editTodo={editTodo} // pass the editTodo function
         />
       ))}
     </ul>
